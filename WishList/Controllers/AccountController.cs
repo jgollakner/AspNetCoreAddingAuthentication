@@ -9,6 +9,7 @@ using WishList.Models;
 
 namespace WishList.Controllers
 {
+    [Authorize]
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
