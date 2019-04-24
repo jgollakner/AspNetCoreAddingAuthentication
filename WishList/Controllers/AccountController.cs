@@ -13,5 +13,11 @@ namespace WishList.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        {
+            this._userManager = userManager;
+            this._signInManager = signInManager;
+        }
     }
 }
